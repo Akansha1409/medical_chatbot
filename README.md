@@ -30,5 +30,50 @@ The bot uses a **Retrieval-Augmented Generation (RAG)** pipeline to fetch releva
 
 ---
 
-## 📁 Project Structure
+## 📄 Features
 
+✅ Ask medical questions and get context-aware answers
+
+✅ Uses Pinecone vector database for efficient retrieval
+
+✅ RAG-based system ensures accurate, relevant responses
+
+✅ Handles large datasets with document chunking
+
+✅ Maintains chat history per session
+
+✅ Ready for deployment on AWS Free Tier
+
+---
+
+## 🌐 Deployment
+
+The app can be deployed on AWS Elastic Beanstalk or EC2 Free Tier:
+
+Use eb init → eb create <env> → eb deploy for Elastic Beanstalk
+
+Make sure environment variables are set in the cloud
+
+---
+
+## 📚 Dataset
+
+Dataset: ruslanmv/ai-medical-chatbot from HuggingFace
+
+Contains patient-doctor conversations
+
+Used to build vector store and train the retrieval system
+
+Open port 8080 for access
+
+---
+
+## 🔗 References
+
+LangChain Documentation
+
+Pinecone Documentation
+
+HuggingFace Datasets
+
+Flask Documentation
